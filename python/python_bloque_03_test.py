@@ -1,1 +1,4 @@
-print("Paso 1")
+print("Hola")
+x = 10
+if x > 5:
+    print("Mayor")
