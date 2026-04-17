@@ -787,4 +787,250 @@ usuarios_web = {"Luis", "Pedro", "Carlos"}
 # 5. Elegir la estructura correcta es clave
 
 
+# =====================================================
+# MÉTODOS MÁS COMUNES — COLECCIONES
+# =====================================================
+
+"""
+Aquí verás los métodos más utilizados en:
+
+- Listas
+- Tuplas
+- Diccionarios
+- Sets
+
+Estos métodos son fundamentales en cualquier proyecto real.
+"""
+
+
+# =====================================================
+# 1. LISTAS
+# =====================================================
+
+numeros = [1, 2, 3]
+
+# -----------------------------------------------------
+# Métodos principales
+# -----------------------------------------------------
+
+numeros.append(4)       # agrega al final
+numeros.insert(0, 0)    # inserta en posición
+numeros.remove(2)       # elimina valor
+ultimo = numeros.pop()  # elimina último
+
+print(numeros)
+
+# Otros útiles
+numeros.sort()          # ordena
+numeros.reverse()       # invierte
+print(len(numeros))     # tamaño
+
+numeros.copy()            # copia de la lista
+numeros.clear()           # vacía la lista
+
+# ordenar sin modificar original
+ordenada = sorted(numeros)
+print(ordenada)
+
+# TIP:
+# append y pop son los más usados
+# sorted() es mejor que sort() si no quieres modificar
+
+# BUENAS PRÁCTICAS:
+# Validar antes de usar remove()
+
+
+# -------------------- EJERCICIOS ----------------------
+
+# 🟢 Básico:
+# Agrega elementos a una lista
+
+# 🟡 Medio:
+# Ordena una lista
+
+# 🔴 Avanzado:
+# Elimina elementos y controla errores
+
+
+
+# =====================================================
+# 2. TUPLAS
+# =====================================================
+
+tupla = (1, 2, 3, 2)
+
+# -----------------------------------------------------
+# Métodos principales
+# -----------------------------------------------------
+
+print(tupla.count(2))  # cuenta ocurrencias
+print(tupla.index(3))  # posición
+
+# TIP:
+# Las tuplas tienen pocos métodos porque son inmutables
+
+# BUENAS PRÁCTICAS:
+# Usar tuplas para datos constantes
+
+
+# -------------------- EJERCICIOS ----------------------
+
+# 🟢 Básico:
+# Cuenta un valor en la tupla
+
+# 🟡 Medio:
+# Encuentra índice de un valor
+
+# 🔴 Avanzado:
+# Maneja error si el valor no existe
+
+
+
+# =====================================================
+# 3. DICCIONARIOS
+# =====================================================
+
+persona = {
+    "nombre": "Santiago",
+    "edad": 30
+}
+
+# -----------------------------------------------------
+# Métodos principales
+# -----------------------------------------------------
+
+print(persona.get("nombre"))         # acceso seguro
+print(persona.get("direccion", "N/A"))
+
+print(persona.keys())   # claves
+print(persona.values()) # valores
+print(persona.items())  # clave-valor
+
+persona.update({"edad": 31})  # actualizar
+persona.pop("edad")           # eliminar
+
+# setdefault → crea si no existe
+persona.setdefault("pais", "Colombia")
+
+# popitem → elimina último elemento
+persona.popitem()
+
+# copy → copia
+copia = persona.copy()
+
+# clear → vacía
+# persona.clear()
+
+print(persona)
+
+# TIP:
+# get() evita errores
+# setdefault evita validaciones manuales
+
+# BUENAS PRÁCTICAS:
+# No acceder directamente sin validar
+# copy() antes de modificar estructuras importantes
+
+
+# -------------------- EJERCICIOS ----------------------
+
+# 🟢 Básico:
+# Usa get()
+
+# 🟡 Medio:
+# Itera con items()
+
+# 🔴 Avanzado:
+# Actualiza múltiples valores
+
+
+
+# =====================================================
+# 4. SETS
+# =====================================================
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+# -----------------------------------------------------
+# Métodos principales
+# -----------------------------------------------------
+
+a.add(4)
+a.remove(2)     # error si no existe
+a.discard(10)   # no falla
+
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
+
+# update → agrega múltiples valores
+a.update(b)
+
+# isdisjoint → sin elementos en común
+print(a.isdisjoint(b))
+
+# issubset → es subconjunto
+print({1, 2}.issubset(a))
+
+# issuperset → contiene a otro
+print(a.issuperset({1, 2}))
+
+# copy
+copia = a.copy()
+
+# clear
+# a.clear()
+
+# TIP:
+# discard es más seguro que remove
+# update() es como union pero modifica el original
+
+# BUENAS PRÁCTICAS:
+# Usar sets para deduplicación y comparación
+# Usar operaciones para lógica, no loops innecesarios
+
+
+# -------------------- EJERCICIOS ----------------------
+
+# 🟢 Básico:
+# Agrega elementos a un set
+
+# 🟡 Medio:
+# Encuentra intersección
+
+# 🔴 Avanzado:
+# Compara dos sets y analiza diferencias
+
+# =====================================================
+# 5. FUNCIONES BUILT-IN (MUY IMPORTANTES)
+# =====================================================
+
+numeros = [10, 20, 30]
+
+print(len(numeros))   # tamaño
+print(max(numeros))   # máximo
+print(min(numeros))   # mínimo
+print(sum(numeros))   # suma
+
+# TIP:
+# Estas funciones se usan TODO el tiempo
+
+# BUENAS PRÁCTICAS:
+# Usar built-ins en lugar de loops manuales
+
+
+
+
+# =====================================================
+# 🧠 MENSAJES CLAVE
+# =====================================================
+
+# 1. Cada estructura tiene sus propios métodos
+# 2. Listas → manipulación dinámica
+# 3. Diccionarios → acceso seguro con get()
+# 4. Sets → operaciones matemáticas
+# 5. Conocer estos métodos acelera muchísimo el desarrollo
+
+
 print("\nFin del bloque 9")
