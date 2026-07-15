@@ -235,3 +235,168 @@
 - Logging básico
 - Buenas prácticas
 - Organización de proyectos
+
+# Introducción a SQL
+
+## Descripción
+
+Esta capacitación tiene como objetivo proporcionar los fundamentos de SQL necesarios para comprender y trabajar con datos en entornos de analítica e ingeniería de datos.
+
+No busca formar especialistas en SQL ni profundizar en temas avanzados de administración de bases de datos. El enfoque está orientado a que los participantes adquieran los conocimientos básicos necesarios para interpretar consultas, analizar información y prepararse para tecnologías posteriores como Spark SQL, Databricks SQL y las certificaciones de Databricks.
+
+---
+
+# BLOQUE 1 — Fundamentos de Bases de Datos y SQL
+
+### Subtemas
+
+* ¿Qué es una base de datos?
+* ¿Qué es SQL?
+* ¿Qué es SQL Server?
+* Tablas
+* Filas y columnas
+* Tipos de datos básicos:
+
+  * INT
+  * DECIMAL
+  * VARCHAR
+  * DATE
+  * DATETIME
+* Clave primaria (Primary Key)
+* Clave foránea (Foreign Key)
+* Relaciones entre tablas
+* Lectura básica de un modelo relacional
+
+---
+
+# BLOQUE 2 — Consultas Básicas
+
+### Subtemas
+
+* SELECT
+* Alias con AS
+* DISTINCT
+* TOP
+* WHERE
+* Operadores de comparación:
+
+  * =
+  * <>
+  * >
+  * <
+  * > =
+  * <=
+* Operadores lógicos:
+
+  * AND
+  * OR
+  * NOT
+* IN
+* NOT IN
+* BETWEEN
+* LIKE
+* IS NULL
+* IS NOT NULL
+
+---
+
+# BLOQUE 3 — Ordenamiento y Agregaciones
+
+### Subtemas
+
+* ORDER BY
+* ASC
+* DESC
+* COUNT
+* SUM
+* AVG
+* MIN
+* MAX
+* GROUP BY
+* HAVING
+
+---
+
+# BLOQUE 4 — JOINs
+
+### Subtemas
+
+* ¿Qué es un JOIN?
+* INNER JOIN
+* LEFT JOIN
+* RIGHT JOIN
+* FULL JOIN
+
+### Conceptos
+
+* Relación uno a uno (1:1)
+* Relación uno a muchos (1:N)
+* Relación muchos a muchos (N:N)
+
+---
+
+# BLOQUE 5 — Manipulación de Datos
+
+### Subtemas
+
+* INSERT
+* UPDATE
+* DELETE
+
+### Conceptos
+
+* Integridad de datos
+* Riesgos de UPDATE sin WHERE
+* Riesgos de DELETE sin WHERE
+
+---
+
+# Objetivos de aprendizaje
+
+Al finalizar esta capacitación, el participante será capaz de:
+
+* Comprender cómo se almacenan los datos en una base de datos relacional.
+* Entender la estructura de tablas y relaciones.
+* Construir consultas básicas utilizando SELECT y WHERE.
+* Filtrar información utilizando operadores y condiciones.
+* Realizar agregaciones mediante GROUP BY.
+* Consultar información de múltiples tablas mediante JOINs.
+* Insertar, actualizar y eliminar registros.
+* Leer y comprender consultas SQL utilizadas en proyectos reales.
+
+---
+
+# Alcance de la capacitación
+
+Esta capacitación está diseñada como una introducción práctica a SQL dentro del roadmap de la Comunidad de Ingeniería de Datos.
+
+Los temas avanzados de SQL, tales como:
+
+* Subconsultas avanzadas
+* CTEs (Common Table Expressions)
+* Window Functions
+* Optimización de consultas
+* Indexación
+* Modelado de datos avanzado
+* Performance Tuning
+
+serán abordados posteriormente en las capacitaciones de Databricks, Spark y Data Engineering.
+
+---
+
+# Metodología
+
+Cada sesión seguirá la siguiente estructura recomendada:
+
+1. Explicación teórica.
+2. Ejemplos en vivo.
+3. Ejercicios guiados.
+4. Espacio para preguntas y discusión.
+
+Adicionalmente, se reservarán aproximadamente 10 minutos por sesión para resolver dudas surgidas después de las capacitaciones anteriores.
+
+---
+
+# Requisitos previos
+
+Se recomienda haber completado previamente la ruta de aprendizaje de Python de la comunidad o contar con conocimientos básicos de programación.
