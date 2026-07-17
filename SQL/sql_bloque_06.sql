@@ -1,6 +1,6 @@
 /*
 ===========================================================
-COMUNIDAD DE INGENIERÍA DE DATOS...
+COMUNIDAD DE INGENIERÍA DE DATOS....
 INTRODUCCIÓN A SQL
 
 BLOQUE 6 - OBJETOS DE BASE DE DATOS
