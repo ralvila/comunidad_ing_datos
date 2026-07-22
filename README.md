@@ -1,4 +1,4 @@
-# Comunidad de Ingeniería de Datos
+# Comunidad de Ingeniería de Datos.
 
 # 🐍 Ruta de Aprendizaje Python (PCEP + PCAP)
 
